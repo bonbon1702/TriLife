@@ -1,0 +1,18 @@
+parameters:
+#    acme_user.example.class: Acme\UserBundle\Example
+    acme.entity_manager.user.class: Acme\UserBundle\EntityManager\UserManager
+
+services:
+#    acme_user.example:
+#        class: %acme_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    hwi_oauth.user.provider.entity:
+        class: HWI\Bundle\OAuthBundle\Security\Core\User\OAuthUserProvider
+    ib_user.oauth_user_provider:
+        class: Acme\UserBundle\Auth\OAuthProvider
+        arguments:
+          - @service_container
+    acme.entity_manager.user:
+            class: %acme.entity_manager.user.class%
+            arguments:
+                - @service_container

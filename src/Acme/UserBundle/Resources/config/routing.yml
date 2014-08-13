@@ -1,0 +1,6 @@
+acme_user_homepage:
+    path:     /login
+    defaults: { _controller: AcmeUserBundle:Default:index }
+test:
+    path:     /test
+    defaults: { _controller: AcmeUserBundle:Default:test }
