@@ -21,3 +21,5 @@ facebook_login:
     pattern: /login/check-facebook
 logout:
     path:   /logout
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

@@ -10,4 +10,12 @@ class DefaultController extends Controller
     {
         return $this->render('AcmeWebsiteBundle:Default:index.html.twig');
     }
+    public function aboutAction()
+    {
+        return $this->render('AcmeWebsiteBundle:Default:about.html.twig');
+    }
+    public function contactAction()
+    {
+        return $this->render('AcmeWebsiteBundle:Default:contact.html.twig');
+    }
 }

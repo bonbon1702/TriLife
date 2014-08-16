@@ -24,7 +24,8 @@
         "twbs/bootstrap": "3.0.*",
         "jquery/jquery":  "1.10.*",
         "oyejorge/less.php": "~1.5",
-        "fortawesome/font-awesome": "~4.0"
+        "fortawesome/font-awesome": "~4.0",
+        "friendsofsymfony/jsrouting-bundle": "@stable"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

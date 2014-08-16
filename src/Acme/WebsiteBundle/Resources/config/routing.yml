@@ -1,3 +1,15 @@
 acme_website_homepage:
     path:     /home
     defaults: { _controller: AcmeWebsiteBundle:Default:index }
+    options:
+                expose: true
+acme_website_about:
+    path:     /home/about
+    defaults: { _controller: AcmeWebsiteBundle:Default:about }
+    options:
+            expose: true
+acme_website_contact:
+    path:     /home/contact
+    defaults: { _controller: AcmeWebsiteBundle:Default:contact }
+    options:
+            expose: true
